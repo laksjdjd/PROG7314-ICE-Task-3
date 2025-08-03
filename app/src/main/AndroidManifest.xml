@@ -16,9 +16,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PROG7314ICETask3">
         <activity
+            android:name=".landing.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".landing.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chatbot.ChatActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

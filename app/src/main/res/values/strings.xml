@@ -6,6 +6,7 @@
     <string name="btn_back_cd">Back</string>
     <string name="tv_ai_chat_assistant">CulinaryGPT Chat Assistant</string>
     <string name="btn_clear_chat_cd">Clear Chat</string>
-    <string name="input_hint">Type your message…</string>
+    <string name="input_hint">Ask a question…</string>
     <string name="fab_send_message_cd">Send message</string>
+    <string name="tv_username">Username</string>
 </resources>

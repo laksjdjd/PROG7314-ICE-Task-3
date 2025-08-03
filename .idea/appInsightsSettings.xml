@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.st10361554.prog7314_ice_task_3" />
+                  <option name="mobileSdkAppId" value="1:328365754758:android:78291e0b4407b8a19c0407" />
+                  <option name="projectId" value="prog7314-ice-3-chatbot" />
+                  <option name="projectNumber" value="328365754758" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

@@ -58,6 +58,31 @@
             android:padding="16dp"/>
     </com.google.android.material.card.MaterialCardView>
 
+    <!-- Username Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/cardDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_username"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:padding="16dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
     <!-- Buttons Card -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardButtons"
@@ -68,7 +93,7 @@
         app:cardElevation="3dp"
         app:cardCornerRadius="10dp"
         app:cardBackgroundColor="@android:color/transparent"
-        app:layout_constraintTop_toBottomOf="@id/cardDescription"
+        app:layout_constraintTop_toBottomOf="@id/cardUsername"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,6 +118,20 @@
                 app:iconGravity="textStart"
                 app:iconPadding="8dp"
                 tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/red"
+                android:text="Logout"
+                app:cornerRadius="16dp"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                tools:ignore="VisualLintButtonSize,TextContrastCheck"
+                app:icon="@drawable/ic_logout" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
