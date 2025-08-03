@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.textfield.TextInputEditText
+import com.google.firebase.auth.FirebaseAuth
+import com.st10361554.prog7314_ice_task_3.R
 import com.st10361554.prog7314_ice_task_3.databinding.ActivityChatBinding
 import com.st10361554.prog7314_ice_task_3.adapters.ChatAdapter
 import com.st10361554.prog7314_ice_task_3.models.ChatMessage
@@ -52,6 +54,9 @@ class ChatActivity : AppCompatActivity() {
     // Adapter for RecyclerView
     private lateinit var chatAdapter: ChatAdapter
 
+    // Firebase Authentication instance
+     private lateinit var auth: FirebaseAuth
+
     /**
      * Called when the activity is first created.
      * Sets up the UI, initializes view components, chat service, RecyclerView, and event listeners.
@@ -84,6 +89,9 @@ class ChatActivity : AppCompatActivity() {
 
         // Initialize Retrofit chat service
         chatService = RetrofitUtils.retrofit2().create(ChatService::class.java)
+
+        // Initialize Firebase Authentication
+        auth = FirebaseAuth.getInstance()
 
         // Initialize RecyclerView and its adapter
         setupRecyclerView()
@@ -120,8 +128,16 @@ class ChatActivity : AppCompatActivity() {
         // Sends user message when send button is clicked
         fabSend.setOnClickListener {
             val messageText = etPrompt.text?.toString()?.trim()
-            if (!messageText.isNullOrEmpty()) {
-                sendMessageToAPI(messageText)
+
+            if (!messageText.isNullOrEmpty())
+            {
+                // Get the username
+                val username = auth.currentUser?.displayName ?: getString(R.string.default_username)
+
+                // Prefix the message with Username
+                val formattedMessage = "Username: $username; $messageText"
+
+                sendMessageToAPI(formattedMessage)
                 etPrompt.text?.clear()
             }
         }
@@ -143,9 +159,13 @@ class ChatActivity : AppCompatActivity() {
      *
      * @param messageText The user's message to send to the chatbot.
      */
-    private fun sendMessageToAPI(messageText: String) {
+    private fun sendMessageToAPI(messageText: String)
+    {
+        // remove the username prefix if it exists
+        val cleanedMessage = messageText.substringAfter("; ").trim()
+
         // Add user's message to chat history
-        chatAdapter.addMessage(ChatMessage(messageText, isUser = true))
+        chatAdapter.addMessage(ChatMessage(cleanedMessage, isUser = true))
 
         // Show loading spinner while waiting for chatbot response
         chatAdapter.addMessage(ChatMessage("", isUser = false, isLoading = true))
