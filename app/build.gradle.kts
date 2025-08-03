@@ -55,4 +55,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+
+    // Biometric Authentication
+    implementation("androidx.biometric:biometric:1.1.0")
 }

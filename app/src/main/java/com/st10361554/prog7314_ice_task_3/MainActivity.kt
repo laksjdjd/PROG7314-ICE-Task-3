@@ -135,13 +135,30 @@ class MainActivity : AppCompatActivity()
     }
 
     /**
-     * Sets the TextView to display the current user's display name, if logged in.
+     * Sets the username TextView to display the user's display name if signed in,
+     * or a default label if signed in anonymously.
      */
     private fun setUsername()
     {
         val user = auth.currentUser
-        if (user != null) {
-            tvUsername.text = user.displayName
+
+        if (user != null)
+        {
+            if (user.isAnonymous)
+            {
+                // User is signed in anonymously; show a default username
+                tvUsername.text = getString(R.string.default_username)
+            }
+            else
+            {
+                // User has a non-anonymous account; show their display name (or email if displayName is null)
+                tvUsername.text = user.displayName ?: user.email ?: getString(R.string.default_username)
+            }
+        }
+        else
+        {
+            // No user is signed in leave blank
+            tvUsername.text = ""
         }
     }
 

@@ -9,4 +9,8 @@
     <string name="input_hint">Ask a question…</string>
     <string name="fab_send_message_cd">Send message</string>
     <string name="tv_username">Username</string>
+    <string name="tv_title_signup">Welcome to CulinaryGPT</string>
+    <string name="btn_sign_up_with_google">Sign Up with Google</string>
+    <string name="btn_sign_up_with_biometrics">Sign Up with Biometrics</string>
+    <string name="default_username">Biometric User</string>
 </resources>
